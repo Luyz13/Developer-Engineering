@@ -10,14 +10,17 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Postwork02Application implements CommandLineRunner {
 
 	private static Logger LOG = LoggerFactory
-			.getLogger(Postwork02Application.class)
+			.getLogger(Postwork02Application.class);
 
 	public static void main(String[] args) {
+		LOG.info("INICIA LA APLICACION");
 		SpringApplication.run(Postwork02Application.class, args);
+		LOG.info("FINALIZA LA APLICACION");
 	}
 
 	@Override
 	public void run(String... args) throws Exception {
-
+		LOG.info("Ejecutando desde la linea de comandos");
+		System.out.println("Hola Mundo");
 	}
 }
